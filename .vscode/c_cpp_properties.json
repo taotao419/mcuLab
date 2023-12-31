@@ -3,7 +3,8 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/opt/homebrew/Cellar/sdcc/4.3.0/share/sdcc/include/mcs51/**"
             ],
             "defines": [],
             "macFrameworkPath": [
