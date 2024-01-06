@@ -1,7 +1,10 @@
 {
     "files.associations": {
         "8051.h": "c",
-        "main.h": "c"
+        "main.h": "c",
+        "lcd1602.h": "c",
+        "delay.h": "c",
+        "matrixkey.h": "c"
     },
     "C_Cpp.intelliSenseEngineFallback": "disabled",
     "C_Cpp.intelliSenseEngine": "Tag Parser",

@@ -3,7 +3,7 @@
 #define _nop_() __asm NOP __endasm
 
 
-void delay1ms(unsigned int xms) //@11.0592MHZ
+void Delay1ms(unsigned int xms) //@11.0592MHZ
 {
     unsigned char i, j, k;
 
@@ -24,20 +24,20 @@ void delay1ms(unsigned int xms) //@11.0592MHZ
 }
 
 void main(){
-    delay1ms(500);
+    Delay1ms(500);
     P2=0xfe;
-    delay1ms(500);
+    Delay1ms(500);
     P2=0xfd;
-    delay1ms(500);
+    Delay1ms(500);
     P2=0xfb;
-    delay1ms(500);
+    Delay1ms(500);
     P2=0xf7;
-    delay1ms(500);
+    Delay1ms(500);
     P2=0xef;
-    delay1ms(500);
+    Delay1ms(500);
     P2=0xdf;
-    delay1ms(500);
+    Delay1ms(500);
     P2=0xbf;
-    delay1ms(500);
+    Delay1ms(500);
     P2=0x7F;
 }

@@ -14,14 +14,14 @@ void main()
         while (i--)
         {
             BEEP = !BEEP;
-            delay1ms(1);
+            Delay1ms(1);
         }
         i=0;
         BEEP=0;
     }
 }
 
-void delay1ms(unsigned int  xms) //@11.0592MHZ
+void Delay1ms(unsigned int  xms) //@11.0592MHZ
 {
     unsigned char i, j, k;
 

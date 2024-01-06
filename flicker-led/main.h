@@ -1,1 +1,1 @@
-void delay1ms(unsigned int);
+void Delay1ms(unsigned int);

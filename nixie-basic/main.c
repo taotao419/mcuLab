@@ -5,7 +5,7 @@
 
 unsigned char nixieTable[] = {0x3F, 0x06, 0x5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07, 0x7f, 0x6F};
 
-void nixie(unsigned char location, unsigned int number)
+void NixieShowNum(unsigned char location, unsigned int number)
 {
     switch (location)
     {
@@ -53,11 +53,11 @@ void nixie(unsigned char location, unsigned int number)
         break;
     }
     NIXIE = nixieTable[number];
-    delay1ms(100);
+    Delay1ms(100);
     NIXIE=0x00;
 }
 
-void delay1ms(unsigned int xms) //@11.0592MHZ
+void Delay1ms(unsigned int xms) //@11.0592MHZ
 {
     unsigned char i, j, k;
 
@@ -81,9 +81,8 @@ void main()
 
     while (1)
     {
-        nixie(4, 8);
-        nixie(5, 8);
-        nixie(6, 8);
-        // do nothing
+        NixieShowNum(4, 8);
+        NixieShowNum(5, 8);
+        NixieShowNum(6, 8);
     }
 }
